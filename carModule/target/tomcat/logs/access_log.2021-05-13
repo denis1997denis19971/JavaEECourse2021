@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [13/May/2021:10:53:38 +0300] "GET /carModule/ HTTP/1.1" 200 210 http-bio-55554-exec-2 232
+0:0:0:0:0:0:0:1 - - [13/May/2021:10:53:38 +0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-55554-exec-3 0
+0:0:0:0:0:0:0:1 - - [13/May/2021:10:53:40 +0300] "GET /carModule/homePage HTTP/1.1" 200 9154 http-bio-55554-exec-2 1848
+0:0:0:0:0:0:0:1 - - [13/May/2021:10:53:40 +0300] "GET /carModule/img/bs.jpg HTTP/1.1" 404 1013 http-bio-55554-exec-2 5
+0:0:0:0:0:0:0:1 - - [13/May/2021:12:55:20 +0300] "GET /carModule/homePage HTTP/1.1" 200 9154 http-bio-55554-exec-7 344
+0:0:0:0:0:0:0:1 - - [13/May/2021:12:55:20 +0300] "GET /carModule/img/bs.jpg HTTP/1.1" 404 1013 http-bio-55554-exec-7 5
+0:0:0:0:0:0:0:1 - - [13/May/2021:19:24:29 +0300] "GET /carModule/ HTTP/1.1" 200 210 http-bio-55554-exec-1 51
+0:0:0:0:0:0:0:1 - - [13/May/2021:19:24:31 +0300] "GET /carModule/homePage HTTP/1.1" 200 9154 http-bio-55554-exec-1 270
+0:0:0:0:0:0:0:1 - - [13/May/2021:19:24:31 +0300] "GET /carModule/img/bs.jpg HTTP/1.1" 404 1013 http-bio-55554-exec-1 5

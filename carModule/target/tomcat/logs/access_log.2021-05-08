@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [08/May/2021:16:58:41 +0300] "GET /favicon.ico HTTP/1.1" 404 - http-bio-55554-exec-4 0
+0:0:0:0:0:0:0:1 - - [08/May/2021:17:52:20 +0300] "GET /carModule/curs HTTP/1.1" 500 8016 http-bio-55554-exec-2 8507
+0:0:0:0:0:0:0:1 - - [08/May/2021:17:52:41 +0300] "GET /carModule/curs HTTP/1.1" 500 8016 http-bio-55554-exec-9 8251

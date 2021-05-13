@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:48:07 +0300] "GET /carModule/ HTTP/1.1" 200 210 http-bio-55554-exec-4 334
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:48:09 +0300] "GET /carModule/homePage HTTP/1.1" 200 5705 http-bio-55554-exec-4 1581
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:48:09 +0300] "GET /img/bs.jpg HTTP/1.1" 404 - http-bio-55554-exec-4 0
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:48:16 +0300] "GET /carModule/updateCarSpring?updateCarId=1&updateCarName=mers&updateCarBrand=5&updateCarSpeed=200&updateCarAge=5&updateCarPrice=5000 HTTP/1.1" 200 946 http-bio-55554-exec-4 875
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:48:20 +0300] "GET /carModule/addCarSpring?addCarName=mers&addCarBrand=5&addCarSpeed=200&addCarAge=5&addCarPrice=5000 HTTP/1.1" 200 942 http-bio-55554-exec-4 93
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:49:03 +0300] "POST /carModule/addCar HTTP/1.1" 200 7269 http-bio-55554-exec-4 16913
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:49:03 +0300] "GET /img/bs.jpg HTTP/1.1" 404 - http-bio-55554-exec-4 0
+0:0:0:0:0:0:0:1 - - [04/May/2021:09:49:23 +0300] "GET /carModule/asc HTTP/1.1" 404 1013 http-bio-55554-exec-4 6
