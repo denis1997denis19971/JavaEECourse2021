@@ -34,6 +34,8 @@ public class PersonController {
      */
     @RequestMapping(value = "/homePage")
     public String GetTestPage(ModelMap model) {
+
+        //vfvdf
         //model.addAttribute("personList", personService.readAllPersons());
         //model.addAttribute("personList", personService.readAllPersons());
 
