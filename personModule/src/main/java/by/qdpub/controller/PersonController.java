@@ -20,13 +20,6 @@ public class PersonController {
 
     @Autowired
     PersonRepository personRepository;
-/*
-    @RequestMapping(value = "/person", method = RequestMethod.GET)
-    public void aaa(
-            @RequestParam (name = "person_id") Integer updateid){
-        int c = 0;
-    }
-*/
 
     /**
      * @param model
@@ -34,32 +27,21 @@ public class PersonController {
      */
     @RequestMapping(value = "/homePage")
     public String GetTestPage(ModelMap model) {
-
-        //vfvdf edwedewdeew
-
-
-        //model.addAttribute("personList", personService.readAllPersons());
-        //model.addAttribute("personList", personService.readAllPersons());
-
         return "/authorization.jsp";
     }
 
     @RequestMapping(value = "/person", method = RequestMethod.POST)
     public String PostAuthPage(ModelMap model, HttpSession session, @RequestParam String loginfromauth) {
-
         model.addAttribute("personList", personService.readAllPersons());
         session.setAttribute("login", loginfromauth);
-
         return "redirect:/springdata";
     }
 
     @RequestMapping(value = "/springdata")
     public String GetTestPageSpringData(ModelMap model) {
-
         Iterable<PersonEntity> users = personRepository.findAll();
         model.addAttribute("personList", users);
         return "test1";
-
     }
 
     @RequestMapping(value = "/updatePage", method = RequestMethod.GET)
@@ -227,54 +209,5 @@ public class PersonController {
         model.addAttribute("personList", byAge);
         return "test1";
     }
-
-//    /**
-//     * This is test method for my aspect
-//     * @author	Zhukouskiy Denis Dmitrievich
-//     */
-//    @RequestMapping(value = "/as")
-//    public String TestingAspect(ModelMap model){
-//        System.out.println("!!!");
-//        model.addAttribute("personList", personService.readAllPersons());
-//        return "test1";
-//    }
-//
-//    @RequestMapping(value = "/home")
-//    public String GetHomePage(){
-//        return "home";
-//    }
-//
-//    @RequestMapping("/users")
-//    public String bbb(ModelMap model){
-//
-//        model.addAttribute("personList", new PersonService().readAllPersons());
-//        return "admin";
-//
-//    }
-//
-//    @RequestMapping(value = "/users1", method = RequestMethod.POST)
-//    public ModelAndView ccc(ModelMap model){
-//
-//        ModelAndView view = new ModelAndView();
-//
-//        view.addObject("personList", new PersonService().readAllPersons());
-//
-//        view.setViewName("/WEB-INF/admin.jsp");
-//
-//        return view;
-//    }
-
-/*    @GetMapping(name = "/admin4789")
-    public ModelAndView ddd(){
-
-        ModelAndView view = new ModelAndView();
-
-        view.addObject("personList", new PersonService().readAllPersons());
-
-        view.setViewName("/admin");
-
-        return view;
-    }*/
-
 
 }

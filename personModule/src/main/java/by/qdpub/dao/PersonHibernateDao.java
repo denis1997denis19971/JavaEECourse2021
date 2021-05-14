@@ -14,23 +14,15 @@ public class PersonHibernateDao implements PersonDao {
 
     public static void main(String[] args) {
 
-        /*     try {*/
         new PersonHibernateDao().createPersonWithPassport();
+
+
         try {
             new PersonHibernateDao().readPersonById(1);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
 
-
-/*        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        try {
-            List <PersonEntity> entity =  new PersonHibernateDao().readAllPersons();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }*/
     }
 
     private void createPersonWithPassport() {

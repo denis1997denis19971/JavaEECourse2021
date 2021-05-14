@@ -22,6 +22,12 @@ public class PersonService {
 
 
     public PersonService() {
+
+        /**
+         * if you need to get access from JDBC or Hibernate then initialize here,
+         * if you want to get access from spring data - you need to atowire bean with realization personSpringDataJPADao
+         */
+
         //personD = new PersonJdbcDao();
         //personD = new PersonHibernateDao();
         //personD = new PersonSpringDataJPADao();
